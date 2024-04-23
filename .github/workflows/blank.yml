@@ -32,13 +32,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          sudo apt install openssh-server -y
-          sudo systemctl enable ssh
-          sudo systemctl start ssh
-          sudo systemctl status ssh
-          sudo wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
-          sudo tar -xvzf ngrok-v3-stable-linux-amd64.tgz -C /usr/local/bin
-          ngrok config add-authtoken 2fTjoZZ0APEgCpfLBMtZsBKGmeb_ERLxjTheSmEri4jgqqjL
-          ngrok tcp 22
+          ls
+          python3 main.py
           echo Add other actions to build,
           echo test, and deploy your project.
