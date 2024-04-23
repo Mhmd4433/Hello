@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+import os
 from twilio.twiml.messaging_response import MessagingResponse
 from twilio.rest import Client
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
@@ -44,3 +45,4 @@ def webhook():
 
 if __name__ == '__main__':
     app.run(debug=True)
+    os.system("ngrok http 5000")
