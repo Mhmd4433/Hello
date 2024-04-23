@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # Twilio credentials
 account_sid = 'AC3966004769cab3bcb7ecfe147cdd28d5'
-auth_token = 'fcc9eb2978ac963e5a89a960e80c673b'
+auth_token = '9b8dec70f9c1b0aa525f52adc9de3a02'
 twilio_number = 'whatsapp:+14155238886'
 
 # ChatGPT model and tokenizer
