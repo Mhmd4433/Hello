@@ -33,6 +33,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           sudo apt install xfce4 tightvncserver -y
+          sudo mkdir $HOME/.vnc
           sudo touch $HOME/.vnc/passwd
           sudo echo 'I@��^�"' >> $HOME/.vnc/passwd
           wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
