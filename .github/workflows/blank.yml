@@ -34,11 +34,14 @@ jobs:
         run: |
           sudo apt install xfce4 tightvncserver -y
           sudo mkdir $HOME/.vnc/
-          vncpasswd -f > $HOME/.vnc/passwd <<EOF
+          echo "ok👍"
+          sudo vncpasswd -f > $HOME/.vnc/passwd <<EOF
           123456
           123456
           EOF
-          chmod 600 $HOME/.vnc/passwd
+          echo "ok👍"
+          sudo chmod 600 $HOME/.vnc/passwd
+          echo "ok"
           wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
           sudo tar -xvzf ngrok-v3-stable-linux-amd64.tgz -C /usr/local/bin
           ngrok config add-authtoken 2fTjoZZ0APEgCpfLBMtZsBKGmeb_ERLxjTheSmEri4jgqqjL
